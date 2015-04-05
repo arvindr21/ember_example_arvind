@@ -1,0 +1,14 @@
+        <h1>Cart</h1> 
+          {{#each cart in model}} 
+             {{single-pizza pizza=cart.pizza cart=true}} 
+          {{/each}}
+        
+          {{#if model}}
+            <div class="row clearfix">
+                <button type="button" {{action "checkout"}} class="btn btn-primary">Checkout</button>
+            </div>   
+          {{/if}}
+
+          {{#unless model}}
+                No Items in your cart! 
+          {{/unless}}

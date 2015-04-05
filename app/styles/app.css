@@ -1,0 +1,8 @@
+.jumbotron {
+  margin-top: 80px;
+}
+
+ul.nav a.active {
+	  color: rgb(255, 255, 255);
+  background-color: rgb(8, 8, 8) !important;
+}

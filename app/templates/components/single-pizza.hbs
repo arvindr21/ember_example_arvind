@@ -1,0 +1,13 @@
+       <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img {{bind-attr src=pizza.image}} alt="Generic placeholder thumbnail" class="thumbs">
+                <div class="caption">
+                    <h3>{{pizza.name}}</h3>
+                    <p>{{pizza.description}}</p>
+                    {{#unless cart}}
+                    <p>{{#link-to 'pizza' pizza classNames="btn btn-primary btn-small"}}View{{/link-to}}
+                    </p>
+                    {{/unless}}
+                </div>
+            </div>
+        </div>
